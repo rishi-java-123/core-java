@@ -19,13 +19,13 @@ public class Demo3 {
 		System.out.println(intType);
 		// same will happen in case of double also
 		
-		//byte b2 = b1+2; // compiler unhappy
+	//	byte b2 = b1+2; // compiler unhappy
 		byte b3 = (byte) (b1 + 2);
 		System.out.println(b1);
 		System.out.println(b3);
 		
 		float f1 = 10.0f;
-		float f2 = (float) (100.4 / f1);
+		float f2 = (float) (100.4) / (f1);
 		float f3 = (float)(f1-0.0);
 		System.out.println(f1);
 		System.out.println(f2);
