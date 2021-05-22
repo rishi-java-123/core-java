@@ -4,7 +4,7 @@ public class Node {
 
     private int data;
     private double dobuleData;
-    public Node nextNode;
+    public Node next;
 
     public Node(int data, double dobuleData){
         this.data = data;
@@ -27,12 +27,12 @@ public class Node {
         this.dobuleData = dobuleData;
     }
 
-    public Node getNextNode() {
-        return nextNode;
+    public Node getNext() {
+        return next;
     }
 
-    public void setNextNode(Node nextNode) {
-        this.nextNode = nextNode;
+    public void setNext(Node next) {
+        this.next = next;
     }
 
     public void displayNode(){

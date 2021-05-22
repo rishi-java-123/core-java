@@ -4,17 +4,17 @@ public class RunnerClass {
     public static void main(String[] args) {
         CustomeLinkedList customeLinkedList= new CustomeLinkedList();
         Node node1= new Node(4,6);
-        customeLinkedList.InsertInLinkedList(node1,node1,2);
+        Node node4= new Node(8,12);
+        Node node3= new Node(5,8);
+        Node node5= new Node(18,28);
+        Node node2= new Node(17,27);
+         customeLinkedList.append( node1);
+        customeLinkedList.append( node5);
+        customeLinkedList.append( node3);
+        customeLinkedList.InsertInLinkedList(node4,0);
+        customeLinkedList.InsertInLinkedList(node2,1);
         customeLinkedList.displayLinkedList();
-       /* customeLinkedList.insertFirstElement(5,5.5);
-        customeLinkedList.insertFirstElement(6,6.5);
-        customeLinkedList.insertFirstElement(8,8.5);
 
-        customeLinkedList.displayLinkedList();
-
-        customeLinkedList.deleteFirstElement();
-
-        customeLinkedList.displayLinkedList();*/
 
     }
 }
