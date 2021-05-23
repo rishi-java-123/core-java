@@ -8,11 +8,13 @@ public class RunnerClass {
         Node node3= new Node(5,8);
         Node node5= new Node(18,28);
         Node node2= new Node(17,27);
-         customeLinkedList.append( node1);
+        customeLinkedList.append( node1);
         customeLinkedList.append( node5);
         customeLinkedList.append( node3);
         customeLinkedList.InsertInLinkedList(node4,0);
         customeLinkedList.InsertInLinkedList(node2,1);
+        customeLinkedList.displayLinkedList();
+        customeLinkedList.deleteFromLinkedList(3);
         customeLinkedList.displayLinkedList();
 
 

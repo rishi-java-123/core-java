@@ -129,7 +129,7 @@ public class CustomeLinkedList {
              }
             nodeToInsert.next=traversingNode.next;
              traversingNode.next=nodeToInsert;
-             
+
         }
         System.out.println(head.getData() +"," + head.getNext());
     }
@@ -160,6 +160,25 @@ public class CustomeLinkedList {
         }
        tempNode.next=nodeToappend;
         return;
+    }
+
+    public void deleteFromLinkedList( int position){
+
+        if (position ==0){
+            head =head.next;
+        }
+        else {
+            Node tempNode=head;
+            Node nodeTodelete=null;
+            for(int i = 0; i<position-1;i++){
+                tempNode=tempNode.next;
+            }
+            nodeTodelete=tempNode.next;
+            tempNode.next=nodeTodelete.next;
+            System.out.println(nodeTodelete.getData() + "");
+
+        }
+
     }
 
 }
